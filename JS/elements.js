@@ -42,7 +42,8 @@ function onGalleryClick (event) {
 };
 
 function onModalClose (event) {
-    refs.lightbox.classList.remove('is-open')
+    refs.lightbox.classList.remove('is-open');
+    refs.lightboxImage.src='';
     window.removeEventListener('keydown', onKaypress);
 }
 
